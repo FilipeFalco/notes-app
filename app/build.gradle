@@ -10,6 +10,7 @@ android {
     defaultConfig {
         applicationId "com.filipefalco.notesapp"
         minSdkVersion 16
+        multiDexEnabled true
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
