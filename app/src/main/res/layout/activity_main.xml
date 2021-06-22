@@ -111,6 +111,7 @@
         android:text="@string/esqueci_senha"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:id="@+id/irParaEsqueciSenha"
         android:textColor="@color/black"
         android:layout_below="@+id/login"
         android:layout_marginTop="10dp"
@@ -126,7 +127,7 @@
         android:layout_marginBottom="30dp"
         android:background="@drawable/button_design"
         android:layout_alignParentBottom="true"
-        android:id="@+id/gotoSignup">
+        android:id="@+id/voltarRegistro">
 
         <TextView
             android:layout_width="wrap_content"
