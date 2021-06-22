@@ -55,7 +55,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/registerEmail"
+            android:id="@+id/registroEmail"
             android:hint="@string/email"
             android:inputType="textEmailAddress">
 
@@ -74,7 +74,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/registerPassword"
+            android:id="@+id/registroPassword"
             android:hint="@string/senha">
 
         </EditText>
@@ -113,7 +113,7 @@
         android:layout_marginRight="20dp"
         android:textColor="@color/black"
         android:layout_below="@+id/registrar"
-        android:id="@+id/gotoLogin"
+        android:id="@+id/voltarLogin"
         android:layout_marginTop="70dp">
         
     </TextView>
