@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NotesApp">
-        <activity android:name=".EsqueciSenha"></activity>
+        <activity android:name=".NotasActivity"></activity>
+        <activity android:name=".EsqueciSenha" />
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity">
             <intent-filter>
