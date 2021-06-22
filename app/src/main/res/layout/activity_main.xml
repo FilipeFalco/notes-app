@@ -76,8 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/loginPassword"
-            android:hint="@string/senha"
-            android:inputType="textPassword">
+            android:hint="@string/senha">
 
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
@@ -96,12 +95,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:layout_marginStart="8dp"
             android:textSize="16sp"
             android:text="@string/login"
             android:layout_centerInParent="true"
             android:textColor="@color/white"
-            >
+            android:layout_marginLeft="8dp">
 
         </TextView>
 
@@ -116,7 +114,7 @@
         android:textColor="@color/black"
         android:layout_below="@+id/login"
         android:layout_marginTop="10dp"
-        android:textAlignment="center">
+        android:gravity="center_horizontal">
 
     </TextView>
 
@@ -134,12 +132,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:layout_marginStart="8dp"
             android:textSize="16sp"
             android:text="@string/novo_cadastro"
             android:layout_centerInParent="true"
             android:textColor="@color/white"
-            >
+            android:layout_marginLeft="8dp">
 
         </TextView>
 

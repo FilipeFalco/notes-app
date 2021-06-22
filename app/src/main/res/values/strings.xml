@@ -9,4 +9,17 @@
     <string name="login">Login</string>
     <string name="esqueci_senha">Esqueci a senha</string>
     <string name="novo_cadastro">Novo Usuário? Então cadastre-se</string>
+
+    <!-- Registro frame -->
+    <string name="novo_usuario">Novo Usuário</string>
+    <string name="bom_te_ver">Como é bom te ver! Seja bem-vindo</string>
+    <string name="registrar">Registrar</string>
+    <string name="possui_login">Já realizou o cadastro? Então faça o login</string>
+
+    <!-- Esqueci senha frame -->
+    <string name="esqueceu_senha">Esqueceu a senha?</string>
+    <string name="nao_se_preocupe">Não se preocupe! Estamos aqui para te ajudar</string>
+    <string name="entrar_email">Entre com seu e-mail</string>
+    <string name="clique_recuperar">Clique aqui para recuperar</string>
+    <string name="voltar_login">Volte para a tela de login</string>
 </resources>
