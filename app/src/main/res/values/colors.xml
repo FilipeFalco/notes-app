@@ -11,6 +11,7 @@
     <!-- Backgrounds -->
     <color name="background">#F9F9F9</color>
     <color name="background_button">#6886c5</color>
+    <color name="background_add_button">#A1F4FB</color>
 
     <!-- Cores de texto -->
     <color name="tx_login">#FFBD4D</color>
