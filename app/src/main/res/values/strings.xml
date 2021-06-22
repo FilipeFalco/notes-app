@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+
+    <!-- Login frame -->
+    <string name="login_bem_vindo">Bem-vindo de volta!</string>
+    <string name="logue_continuar">Logue para continuar</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
+    <string name="esqueci_senha">Esqueci a senha</string>
+    <string name="novo_cadastro">Novo Usuário? Então cadastre-se</string>
+</resources>
