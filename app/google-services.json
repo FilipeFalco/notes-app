@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "616021087508",
+    "project_id": "note-app-90f06",
+    "storage_bucket": "note-app-90f06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616021087508:android:9bbe9c9bc389481ab6de01",
+        "android_client_info": {
+          "package_name": "com.filipefalco.notesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616021087508-boo74ab53fij1d7c2a1gmli036j31c49.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHkzZdJXp_MGGctzp-3jU37_pZaqOc_hE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616021087508-boo74ab53fij1d7c2a1gmli036j31c49.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
