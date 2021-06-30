@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
@@ -31,6 +32,8 @@ public class CriarNotas extends AppCompatActivity {
     FirebaseUser firebaseUser;
     FirebaseFirestore firebaseFirestore;
 
+    ProgressBar mProgressBarCriarNotas;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +42,8 @@ public class CriarNotas extends AppCompatActivity {
         salvarNota = findViewById(R.id.salvarNotaFab);
         criarTituloDaNota = findViewById(R.id.criarTituloDaNota);
         criarConteudoDaNota = findViewById(R.id.criarConteudoDaNota);
+
+        mProgressBarCriarNotas = findViewById(R.id.barraDeProgressoDaCriarNotas);
 
         Toolbar toolbar = findViewById(R.id.toolBarCriarNotas);
         setSupportActionBar(toolbar);
@@ -56,6 +61,9 @@ public class CriarNotas extends AppCompatActivity {
                 if (title.isEmpty() || content.isEmpty()){
                     Toast.makeText(getApplicationContext(), "Ambos os campos são necessários", Toast.LENGTH_SHORT).show();
                 }else{
+
+                    mProgressBarCriarNotas.setVisibility(View.VISIBLE);
+
                     DocumentReference documentReference = firebaseFirestore.collection("notes").document(firebaseUser.getUid()).collection("myNotes").document();
                     Map<String, Object> note = new HashMap<>();
                     note.put("title", title);
@@ -71,6 +79,7 @@ public class CriarNotas extends AppCompatActivity {
                         @Override
                         public void onFailure(@NonNull Exception e) {
                             Toast.makeText(getApplicationContext(), "Erro ao criar a nota", Toast.LENGTH_SHORT).show();
+                            mProgressBarCriarNotas.setVisibility(View.INVISIBLE);
                             //startActivity(new Intent(CriarNotas.this, NotasActivity.class));
 
                         }

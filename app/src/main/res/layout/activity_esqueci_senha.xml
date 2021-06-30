@@ -27,8 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/esqueceu_senha"
+            android:textColor="#BF000000"
             android:textSize="38sp"
-            android:textColor="@color/black"
             android:textStyle="bold">
 
         </TextView>
@@ -37,42 +37,44 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/nao_se_preocupe"
-            android:textSize="22sp"
-            android:textColor="@color/black">
+            android:textColor="#BF000000"
+            android:textSize="22sp">
 
         </TextView>
 
     </LinearLayout>
 
     <EditText
+        android:id="@+id/esqueceuSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@id/centerLine3"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_above="@id/centerLine3"
-        android:id="@+id/esqueceuSenha"
-        android:hint="@string/entrar_email"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp"
+        android:hint="@string/entrar_email" />
 
     <Button
+        android:id="@+id/recuperarSenha"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/clique_recuperar"
-        android:id="@+id/recuperarSenha"
         android:layout_below="@+id/centerLine3"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp" />
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/clique_recuperar"
+        android:textColor="#000000"
+        app:backgroundTint="@color/lightGreen" />
 
     <TextView
+        android:id="@+id/voltarLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="@string/voltar_login"
-        android:id="@+id/voltarLogin"
         android:layout_marginBottom="30dp"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:text="@string/voltar_login"
+        android:textColor="#5E3DAE"
+        android:textSize="14sp" />
 
 </RelativeLayout>

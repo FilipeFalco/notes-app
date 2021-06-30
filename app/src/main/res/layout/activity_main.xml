@@ -7,6 +7,16 @@
     android:background="@color/background"
     tools:context=".MainActivity">
 
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/irParaEsqueciSenha"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:id="@+id/barraDeProgressoDaMainActivity"
+        android:layout_marginTop="10dp">
+    </ProgressBar>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,8 +38,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/login_bem_vindo"
+            android:textColor="#5E3DAE"
             android:textSize="38sp"
-            android:textColor="@color/tx_login"
             android:textStyle="bold">
 
         </TextView>
@@ -38,8 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/logue_continuar"
-            android:textSize="23sp"
-            android:textColor="@color/sub_tx_login">
+            android:textColor="#BF000000"
+            android:textSize="23sp">
 
         </TextView>
 
@@ -82,62 +92,62 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <RelativeLayout
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/button_design"
         android:layout_below="@+id/password"
-        android:id="@+id/login">
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/lightGreen">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:text="@string/login"
             android:layout_centerInParent="true"
-            android:textColor="@color/white"
-            android:layout_marginLeft="8dp">
+            android:layout_marginLeft="8dp"
+            android:text="@string/login"
+            android:textColor="#CC000000"
+            android:textSize="16sp"
+            android:textStyle="bold">
 
         </TextView>
 
     </RelativeLayout>
 
     <TextView
+        android:id="@+id/irParaEsqueciSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/esqueci_senha"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:id="@+id/irParaEsqueciSenha"
-        android:textColor="@color/black"
         android:layout_below="@+id/login"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:gravity="center_horizontal">
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/esqueci_senha"
+        android:textColor="#5E3DAE">
 
     </TextView>
 
     <RelativeLayout
+        android:id="@+id/voltarRegistro"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="30dp"
-        android:background="@drawable/button_design"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/voltarRegistro">
+        android:background="@color/lightBlueGray">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:text="@string/novo_cadastro"
             android:layout_centerInParent="true"
-            android:textColor="@color/white"
-            android:layout_marginLeft="8dp">
+            android:layout_marginLeft="8dp"
+            android:text="@string/novo_cadastro"
+            android:textColor="#5E3DAE"
+            android:textSize="16sp"
+            android:textStyle="bold">
 
         </TextView>
 

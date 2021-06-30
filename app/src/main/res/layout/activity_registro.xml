@@ -27,8 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/novo_usuario"
+            android:textColor="#5E3DAE"
             android:textSize="38sp"
-            android:textColor="@color/tx_login"
             android:textStyle="bold">
 
         </TextView>
@@ -37,8 +37,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/bom_te_ver"
-            android:textSize="20sp"
-            android:textColor="@color/sub_tx_login">
+            android:textColor="#BF000000"
+            android:textSize="20sp">
 
         </TextView>
 
@@ -52,12 +52,14 @@
         android:id="@+id/email"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp">
+
         <EditText
+            android:id="@+id/registroEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/registroEmail"
             android:hint="@string/email"
-            android:inputType="textEmailAddress">
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/cardview_shadow_end_color">
 
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
@@ -81,41 +83,41 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <RelativeLayout
+        android:id="@+id/registrar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/button_design"
         android:layout_below="@+id/password"
-        android:id="@+id/registrar">
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/lightGreen">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:text="@string/registrar"
             android:layout_centerInParent="true"
-            android:textColor="@color/white"
-            android:layout_marginLeft="8dp">
+            android:layout_marginLeft="8dp"
+            android:text="@string/registrar"
+            android:textColor="#BF000000"
+            android:textSize="16sp"
+            android:textStyle="bold">
 
         </TextView>
 
     </RelativeLayout>
 
     <TextView
+        android:id="@+id/voltarLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/registrar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
         android:gravity="center_horizontal"
         android:text="@string/possui_login"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textColor="@color/black"
-        android:layout_below="@+id/registrar"
-        android:id="@+id/voltarLogin"
-        android:layout_marginTop="70dp">
-        
+        android:textColor="#5E3DAE">
+
     </TextView>
 
 

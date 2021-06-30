@@ -4,47 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CriarNotas">
-
+    tools:context=".DetalhesDaNotaActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolBarCriarNotas"
+        android:id="@+id/toolBarDetalhesDaNota"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/lightBlueGray">
 
 
-        <EditText
-            android:id="@+id/criarTituloDaNota"
+        <TextView
+            android:id="@+id/tituloDetalhesDaNota"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Dê um título para sua nota"
             android:paddingTop="20dp"
-            android:textColor="#000000"
-            android:textColorHint="#BF000000"
+            android:text="Título aqui"
+            android:textColor="#BF000000"
             android:textSize="20sp"
             android:textStyle="bold" />
 
     </androidx.appcompat.widget.Toolbar>
 
-    <EditText
-        android:id="@+id/criarConteudoDaNota"
+    <TextView
+        android:id="@+id/conteudoDetalhesDaNota"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/toolBarCriarNotas"
-        android:layout_marginTop="-1dp"
+        android:layout_below="@+id/toolBarDetalhesDaNota"
         android:background="@color/white"
         android:gravity="top|left"
         android:hint="Digite sua nota aqui... =)"
         android:padding="15dp"
         android:textColor="@color/black"
-        android:textColorHint="#CC000000"
         android:textSize="15sp">
 
-    </EditText>
+    </TextView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/salvarNotaFab"
+        android:id="@+id/editarNotaFAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -52,20 +48,10 @@
         android:layout_gravity="bottom|end"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="30dp"
-        android:background="@color/background_add_button"
-        android:src="@drawable/save"
+        android:background="@color/lightYellow"
+        android:src="@drawable/edit"
         app:backgroundTint="@color/lightGreen"
         app:elevation="6dp"
         app:maxImageSize="28dp" />
-
-    <ProgressBar
-        android:id="@+id/barraDeProgressoDaCriarNotas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
-        android:visibility="invisible">
-    </ProgressBar>
-
 
 </RelativeLayout>

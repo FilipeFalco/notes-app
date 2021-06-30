@@ -8,6 +8,17 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="lightBlueGray">#EFF3F5</color>
+    <color name="lightGray">#F9F9F9</color>
+    <color name = "lightYellow">#FEFFCD</color>
+    <color name="lightGreen">#D7FFCD</color>
+    <color name="lightPink">#FBCDFF</color>
+    <color name="lightBlue">#CDE4FF</color>
+    <color name="lightRed">#FFCDCD</color>
+    <color name="lightOrange">#FFEBCD</color>
+    <color name="lightPurple">#E9CDFF</color>
+    <color name="lightBrown">#E5D8C8</color>
+
     <!-- Backgrounds -->
     <color name="background">#F9F9F9</color>
     <color name="background_button">#6886c5</color>

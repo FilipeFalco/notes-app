@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
 
+    ProgressBar mprogressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         mLogin = findViewById(R.id.login);
         mVoltarRegistro = findViewById(R.id.voltarRegistro);
         mIrParaEsqueciSenha = findViewById(R.id.irParaEsqueciSenha);
+
+        mprogressBar = findViewById(R.id.barraDeProgressoDaMainActivity);
 
         firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
@@ -70,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Todos os campos precisão estar preenchidos", Toast.LENGTH_SHORT).show();
                 } else {
                     // Logar usuário
+
+                    mprogressBar.setVisibility(View.VISIBLE);
+
                     firebaseAuth.signInWithEmailAndPassword(mail, senha).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
@@ -77,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
                                 checkMailVerification();
                             } else {
                                 Toast.makeText(getApplicationContext(), "Conta não existe", Toast.LENGTH_SHORT).show();
+                                mprogressBar.setVisibility(View.INVISIBLE);
                             }
                         }
                     });
@@ -93,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
             finish();
             startActivity(new Intent(MainActivity.this, NotasActivity.class));
         } else {
+            mprogressBar.setVisibility(View.INVISIBLE);
             Toast.makeText(getApplicationContext(), "Verifique primeiro seu e-mail", Toast.LENGTH_SHORT).show();
             firebaseAuth.signOut();
         }

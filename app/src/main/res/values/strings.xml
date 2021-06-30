@@ -2,24 +2,24 @@
     <string name="app_name">NotesApp</string>
 
     <!-- Login frame -->
-    <string name="login_bem_vindo">Bem-vindo de volta!</string>
+    <string name="login_bem_vindo">Olá, bem vindo ao NoteKeeper!</string>
     <string name="logue_continuar">Logue para continuar</string>
     <string name="email">Email</string>
     <string name="senha">Senha</string>
     <string name="login">Login</string>
-    <string name="esqueci_senha">Esqueci a senha</string>
+    <string name="esqueci_senha">Esqueceu a senha? Clique aqui</string>
     <string name="novo_cadastro">Novo Usuário? Então cadastre-se</string>
 
     <!-- Registro frame -->
-    <string name="novo_usuario">Novo Usuário</string>
-    <string name="bom_te_ver">Como é bom te ver! Seja bem-vindo</string>
-    <string name="registrar">Registrar</string>
-    <string name="possui_login">Já realizou o cadastro? Então faça o login</string>
+    <string name="novo_usuario">Nova(o) por aqui?</string>
+    <string name="bom_te_ver">Como é bom ter você com a gente!</string>
+    <string name="registrar">Criar conta</string>
+    <string name="possui_login">Já criou sua conta? Então faça o login clicando aqui</string>
 
     <!-- Esqueci senha frame -->
-    <string name="esqueceu_senha">Esqueceu a senha?</string>
+    <string name="esqueceu_senha">Esqueceu a sua senha?</string>
     <string name="nao_se_preocupe">Não se preocupe! Estamos aqui para te ajudar</string>
     <string name="entrar_email">Entre com seu e-mail</string>
     <string name="clique_recuperar">Clique aqui para recuperar</string>
-    <string name="voltar_login">Volte para a tela de login</string>
+    <string name="voltar_login">Volte para a tela de login clicando aqui</string>
 </resources>
