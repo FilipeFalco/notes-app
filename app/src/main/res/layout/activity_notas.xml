@@ -7,22 +7,24 @@
     tools:context=".NotasActivity">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/criarNotaFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
         android:layout_gravity="bottom|end"
-        android:id="@+id/criarNotaFab"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="31dp"
+        android:background="@color/lightYellow"
         android:src="@drawable/ic_add"
-        android:background="@color/background_add_button"
-        app:maxImageSize="40dp" />
+        app:backgroundTint="@color/lightGreen"
+        app:maxImageSize="40dp"
+        app:rippleColor="#AAF191" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recyclerView"
         android:scrollbars="vertical">
 
     </androidx.recyclerview.widget.RecyclerView>

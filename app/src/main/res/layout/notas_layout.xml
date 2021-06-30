@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
@@ -23,18 +24,18 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/notaTitulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/notaTitulo"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
                     android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
                     android:paddingRight="10dp"
                     android:paddingBottom="10dp"
                     android:text="Desenvolvimento nota"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:layout_weight="1"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp">
+                    android:textColor="#CC000000"
+                    android:textSize="20sp">
 
                 </TextView>
 
@@ -49,15 +50,15 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/conteudoNota"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/conteudoNota"
-                android:paddingBottom="20dp"
                 android:paddingLeft="10dp"
-                android:paddingRight="10dp"
                 android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
                 android:text="Esse é o conteudo do cartão"
-                android:textColor="@color/black" />
+                android:textColor="#CC000000" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
