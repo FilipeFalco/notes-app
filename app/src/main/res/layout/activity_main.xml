@@ -86,7 +86,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/loginPassword"
-            android:hint="@string/senha">
+            android:hint="@string/senha"
+            android:inputType="textPassword">
 
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
