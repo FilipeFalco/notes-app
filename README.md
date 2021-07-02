@@ -17,7 +17,7 @@ NoteKeeper é um aplicativo de bloco de notas com total inspiração no Keep do 
 * Cadastro
 * Verificação de duas etapas/confirmar email
 
-## Técnologias utilizadas
+## Tecnologias utilizadas
 
 As seguintes tecnologias/linguagens forma utilizadas no projeto:
 * Java - Linguagem de programação;
