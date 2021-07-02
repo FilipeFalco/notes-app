@@ -9,15 +9,20 @@ NoteKeeper é um aplicativo de bloco de notas com total inspiração no Keep do 
 ## Papéis
 * Usuário: 
   * Criar e atualizar conta
-  * Criar, editar e deletar notas
+  * Criar, visualizar, editar e deletar notas
 
 ## Requisitos funcionais
-* CRUD das Notas
+* Criar uma nota
+* Visualizar uma nota
+* Editar uma nota
+* Deletar uma nota
 * Login
 * Cadastro
-* Verificação de duas etapas/confirmar email
 
-## Tecnologias utilizadas
+## Requisitos não funcionais
+* Acessibilidade - As cores no aplicativo precisam ter uma relação de contraste com o fundo que seja no mínimo AA de acordo com o guia WCAG
+* Segurança - O e-mail precisa ser verificado antes do cadastro ser realizado
+* Segurança - A senha de um usuário precisa ter no mínimo 8 caracteres
 
 As seguintes tecnologias/linguagens forma utilizadas no projeto:
 * Java - Linguagem de programação;
